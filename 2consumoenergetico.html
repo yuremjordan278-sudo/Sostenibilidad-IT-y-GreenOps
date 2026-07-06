@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2. Consumo Energético y Huella de Carbono</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .articulo-blog { background-color: white; padding: 40px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); line-height: 1.8; font-size: 16px; color: #333; }
+        .articulo-blog h2 { color: #0b4f35; border-bottom: 2px solid #117851; padding-bottom: 8px; margin-top: 30px; }
+        .articulo-blog h3 { color: #117851; margin-top: 25px; }
+        .articulo-blog p { margin-bottom: 20px; text-align: justify; }
+        .articulo-blog ul, .articulo-blog ol { margin-bottom: 25px; padding-left: 20px; }
+        .articulo-blog li { margin-bottom: 12px; }
+        
+        .imagen-blog {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+            display: block;
+            margin: 30px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .tabla-contenedor { overflow-x: auto; margin: 30px 0; }
+        table { width: 100%; border-collapse: collapse; background: #fff; min-width: 600px; }
+        th, td { padding: 14px; border: 1px solid #ddd; text-align: left; vertical-align: top; }
+        th { background-color: #0b4f35; color: white; font-weight: bold; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        
+        .back-link { display: inline-block; margin-top: 30px; color: #0b4f35; font-weight: bold; text-decoration: none; }
+        .back-link:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <a href="../index.html" class="logo-link">
+                <img src="../imagenes/logo2.png" alt="Volver al Inicio" width="60">
+            </a>
+            <div class="titulos-header">
+                <h1>Sostenibilidad IT y GreenOps</h1>
+                <p>Portal Informativo | Universidad Tecnológica de Panamá</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <article class="articulo-blog">
+            <h1>2. Consumo Energético y Huella de Carbono de la Infraestructura Digital</h1>
+            <p>
+                En el panorama tecnológico contemporáneo, la infraestructura digital ha demostrado tener un apetito energético sumamente voraz combinado con una huella de carbono que crece de forma exponencial. Esta problemática crítica no se limita a un único sector, sino que se manifiesta de forma global a través de tres grandes bloques operativos interconectados: los dispositivos finales de usuario, las complejas redes de transmisión de datos y, de manera muy acentuada, los centros de datos a gran escala.
+            </p>
+
+            <h2>Los Tres Alcances de la Huella de Carbono Tecnológica</h2>
+            <p>
+                Para desarrollar una gestión ambiental que sea verdaderamente responsable y transparente, resulta crucial comprender con precisión matemática de dónde provienen las emisiones contaminantes corporativas. El estándar internacional <strong>GHG Protocol</strong> clasifica estas emisiones en tres niveles operativos o alcances, esenciales para auditar la sostenibilidad informática:
+            </p>
+
+            <div class="tabla-contenedor">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Clasificación del Alcance</th>
+                            <th>Naturaleza e Impacto Ambiental</th>
+                            <th>Ejemplo Práctico Aplicado a las TI</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Alcance 1 (Emisiones directas)</strong></td>
+                            <td>Provienen de fuentes físicas que la propia organización posee o controla de forma directa.</td>
+                            <td>El combustible diésel que se almacena y quema de manera interna en los generadores de respaldo de los centros de datos durante cortes de suministro eléctrico o pruebas de rendimiento preventivas.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Alcance 2 (Emisiones indirectas por energía comprada)</strong></td>
+                            <td>Representa la categoría más significativa a nivel operacional. Corresponde a los gases de efecto invernadero generados externamente por la planta eléctrica que suministra la energía consumida por la infraestructura.</td>
+                            <td>El consumo energético de los servidores en función del factor de intensidad de carbono de la red eléctrica local (gCO₂eq/kWh). Operar en entornos con matrices fósiles (como Irlanda) genera un impacto drásticamente mayor que hacerlo en matrices casi 100% renovables (como Suecia).</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Alcance 3 (Otras emisiones indirectas)</strong></td>
+                            <td>Es la categoría más amplia, difusa y compleja de cuantificar, pero representa por amplio margen el mayor peso del impacto total de una compañía tecnológica, abarcando la huella embebida o incorporada (embodied carbon).</td>
+                            <td>La extracción de minerales críticos, la fundición de metales pesados y el ensamblaje inicial de servidores, routers y dispositivos móviles, sumado al carbono liberado en la construcción de edificios físicos para centros de datos y el transporte de los RAEE en su fin de vida útil.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <img src="../imagenes/2-consumo-detalle.jpg" alt="Consumo en Centros de Datos e Infraestructura" class="imagen-blog">
+
+            <h2>El Caso Específico de los Centros de Datos</h2>
+            <p>
+                Considerados unánimemente como las fábricas de la era digital, los centros de datos concentra una demanda de potencia sin precedentes. El consumo agregado de electricidad dentro de estas megaestructuras se desglosa fundamentalmente en dos partes prácticamente equivalentes:
+            </p>
+            <ol>
+                <li><strong>Energía para computación:</strong> Destinada directamente a alimentar los componentes críticos de procesamiento de datos, tales como procesadores centrales (CPU), unidades de procesamiento gráfico (GPU), memoria RAM y sistemas de almacenamiento masivo. Es fundamental notar que la irrupción global de la Inteligencia Artificial —especialmente durante las fases intensivas de entrenamiento de modelos masivos de lenguaje y la inferencia a gran escala— ha disparado de forma dramática la demanda de GPUs de alto consumo, obligando a reconfigurar la densidad energética por rack de los estándares tradicionales de ~5 kW a potencias superiores a los +40 kW por rack.</li>
+                <li><strong>Energía para refrigeración y pérdidas:</strong> Destinada a mantener las condiciones térmicas óptimas de la infraestructura. Los sistemas de climatización tradicionales (HVAC), los métodos de enfriamiento por aire (free-cooling) y los sistemas avanzados de refrigeración líquida pueden llegar a representar fácilmente entre el 30% y el 40% del consumo eléctrico total del edificio. La eficacia con la que se gestiona este flujo se mide internacionalmente a través del indicador PUE (Power Usage Effectiveness), el cual establece la relación exacta entre la energía total que entra al centro de datos frente a la energía que efectivamente llega a los equipos TI. Mientras que un PUE perfecto se sitúa en el valor 1.0, los centros de datos modernos de los hiperescaladores logran actualmente eficiencias notables que oscilan entre 1.1 y 1.2.</li>
+            </ol>
+
+            <h2>Estrategias Clave de Reducción y Optimización</h2>
+            <p>
+                Para mitigar este impacto de forma efectiva, las organizaciones deben intervenir directamente sobre las variables que componen la ecuación general de la sostenibilidad digital: <em>Huella Total = Consumo Eléctrico (kWh) &times; Intensidad de Carbono de la Red (gCO₂/kWh)</em>. Las líneas de acción se dividen bajo este principio matemático:
+            </p>
+
+            <h3>A. Reducir el consumo neto de energía (los kWh):</h3>
+            <ul>
+                <li><strong>Virtualización y contenerización:</strong> Permiten incrementar drásticamente la tasa de utilización real de los servidores físicos, los cuales históricamente operaban en rangos de infrautilización ineficientes de apenas el 10% al 15% de su capacidad.</li>
+                <li><strong>Eliminación de "cargas de trabajo zombis":</strong> Consiste en auditar de forma automatizada el entorno de producción para identificar y apagar de inmediato proyectos obsoletos, bases de datos huérfanas o instancias virtuales activas que ya nadie utiliza pero que continúan extrayendo energía pasiva.</li>
+                <li><strong>Modernización de hardware:</strong> Reemplazo tecnológico enfocado en la adopción de nuevos procesadores que garanticen una mayor capacidad de cómputo por cada vatio de potencia consumido.</li>
+                <li><strong>Sistemas de refrigeración líquida:</strong> Transición desde sistemas de disipación basados en aire hacia tecnologías de inmersión o bloques líquidos para CPUs y GPUs de alta densidad, permitiendo desplomar los valores del PUE.</li>
+            </ul>
+
+            <h3>B. Reducir la intensidad de carbono (los gCO₂/kWh):</h3>
+            <ul>
+                <li><strong>Ubicación estratégica (carbon-aware computing):</strong> Diseñar sistemas capaces de desplegar u orquestar de manera flexible las cargas de trabajo hacia regiones geográficas cloud que presenten la mayor disponibilidad de energía libre de carbono en tiempo real.</li>
+                <li><strong>Cómputo temporal eficiente:</strong> Planificar y ejecutar aquellas tareas computacionales que demanden un consumo masivo de recursos (como el procesamiento por lotes o "batch jobs", análisis masivos de datos o el entrenamiento de IA) en las franjas horarias del día donde la red eléctrica local presente una penetración máxima de energías renovables (solar o eólica), minimizando así de forma directa la dependencia estacional de combustibles fósiles.</li>
+            </ul>
+
+            <a href="../index.html" class="back-link">← Regresar a la página principal</a>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Universidad Tecnológica de Panamá | Centro Regional de Chiriquí</p>
+    </footer>
+
+</body>
+</html>

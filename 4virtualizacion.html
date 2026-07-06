@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4. Virtualización y Consolidación de Servidores</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .articulo-blog { background-color: white; padding: 40px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); line-height: 1.8; font-size: 16px; color: #333; }
+        .articulo-blog h2 { color: #0b4f35; border-bottom: 2px solid #117851; padding-bottom: 8px; margin-top: 30px; }
+        .articulo-blog h3 { color: #117851; margin-top: 25px; }
+        .articulo-blog p { margin-bottom: 20px; text-align: justify; }
+        .articulo-blog ul { margin-bottom: 25px; padding-left: 20px; }
+        .articulo-blog li { margin-bottom: 12px; }
+        
+        .imagen-blog {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            display: block;
+            margin: 30px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .back-link { display: inline-block; margin-top: 30px; color: #0b4f35; font-weight: bold; text-decoration: none; }
+        .back-link:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <a href="../index.html" class="logo-link">
+                <img src="../imagenes/logo2.png" alt="Volver al Inicio" width="60">
+            </a>
+            <div class="titulos-header">
+                <h1>Sostenibilidad IT y GreenOps</h1>
+                <p>Portal Informativo | Universidad Tecnológica de Panamá</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <article class="articulo-blog">
+            <h1>4. Virtualización y Consolidación de Servidores</h1>
+            <p>
+                Durante las décadas pasadas, las arquitecturas empresariales de TI operaban bajo el ineficiente modelo de "un servidor físico por aplicación". Esta configuración tradicional provocaba que miles de servidores físicos funcionaran continuamente con tasas de utilización de cómputo ridículamente bajas, situadas entre el 10% y el 15% de su capacidad real. El resultado era un desperdicio masivo de energía eléctrica y hardware subutilizado que permanecía encendido emitiendo calor y consumiendo recursos pasivos de manera constante.
+            </p>
+
+            <img src="../imagenes/tema4.jpg" alt="Esquema lógico de virtualización y consolidación" class="imagen-blog">
+
+            <h2>¿Qué es la Virtualización y cómo impacta al medio ambiente?</h2>
+            <p>
+                La virtualización es la tecnología de software que permite abstraer los recursos físicos de una máquina (procesadores, memoria RAM, almacenamiento y redes) para crear múltiples entornos virtuales independientes y aislados entre sí, conocidos como Máquinas Virtuales (VM). Esta abstracción es gestionada por una capa de software especializada denominada <strong>hipervisor</strong>.
+            </p>
+            <p>
+                Desde la perspectiva del Green IT, la virtualización actúa directamente como un motor de optimización ambiental al permitir la **Consolidación de Servidores**. En lugar de requerir diez servidores físicos independientes funcionando a una baja capacidad para ejecutar diez aplicaciones distintas, la virtualización permite ejecutar esas mismas diez aplicaciones de forma segura y simultánea dentro de un único servidor físico de alta capacidad, elevando de forma inteligente su tasa de utilización real hasta rangos óptimos del 70% u 80%.
+            </p>
+
+            <h2>Beneficios Ecológicos Directos de la Consolidación</h2>
+            <p>
+                La consolidación de recursos lógicos sobre infraestructuras optimizadas desencadena una serie de ventajas ambientales inmediatas dentro de los centros de datos corporativos:
+            </p>
+            <ul>
+                <li><strong>Reducción drástica del consumo eléctrico energético:</strong> Al disminuir la cantidad total de máquinas físicas encendidas, disminuye de forma proporcional la demanda de electricidad requerida para alimentarlas en el día a día.</li>
+                <li><strong>Disminución del impacto de climatización:</strong> Menos equipos de hardware emitiendo calor simultáneamente alivian de forma directa la carga operativa de los sistemas de enfriamiento del centro de datos, disminuyendo sensiblemente el indicador PUE del edificio.</li>
+                <li><strong>Mitigación de la huella de carbono embebida (Alcance 3):</strong> Al requerir menos servidores físicos en total para operar la infraestructura, las empresas evitan la adquisición de hardware nuevo. Esto frena de manera directa el impacto ambiental vinculado a la minería de tierras raras, la fabricación de microcomponentes y el posterior desecho de residuos electrónicos (e-waste).</li>
+                <li><strong>Optimización del espacio físico ocupado:</strong> Permite reducir drásticamente el espacio de suelo ("footprint") requerido en las salas de servidores empresariales, maximizando la densidad operativa por metro cuadrado.</li>
+            </ul>
+
+            <h2>La evolución actual: Contenedores y Serverless</h2>
+            <p>
+                La evolución de la virtualización clásica hacia arquitecturas modernas y ligeras en 2026 ha potenciado aún más los beneficios de la sostenibilidad digital. La **contenerización** (utilizando plataformas como Docker y orquestadores como Kubernetes) permite compartir de forma eficiente el propio sistema operativo anfitrión entre aplicaciones aisladas, eliminando la sobrecarga de recursos de memoria y CPU que exigen las máquinas virtuales tradicionales. 
+            </p>
+            <p>
+                Por su parte, los modelos de arquitectura **Serverless** (computación sin servidor) llevan la eficiencia al extremo operativo, asignando y ejecutando recursos informáticos estrictamente durante los milisegundos exactos en los que una petición de software se encuentra activa, apagando de forma automatizada cualquier consumo energético pasivo residual de los sistemas cuando la demanda vuelve a cero.
+            </p>
+
+            <a href="../index.html" class="back-link">← Regresar a la página principal</a>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Universidad Tecnológica de Panamá | Centro Regional de Chiriquí</p>
+    </footer>
+
+</body>
+</html>

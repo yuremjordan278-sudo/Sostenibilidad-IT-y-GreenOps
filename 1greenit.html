@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1. Green IT y GreenOps</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .articulo-blog { background-color: white; padding: 40px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); line-height: 1.8; font-size: 16px; color: #333; }
+        .articulo-blog h2 { color: #0b4f35; border-bottom: 2px solid #117851; padding-bottom: 8px; margin-top: 30px; }
+        .articulo-blog h3 { color: #117851; margin-top: 25px; }
+        .articulo-blog p { margin-bottom: 20px; text-align: justify; }
+        .articulo-blog ul { margin-bottom: 25px; padding-left: 20px; }
+        .articulo-blog li { margin-bottom: 12px; }
+
+        .imagen-blog {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            display: block;
+            margin: 30px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .back-link { display: inline-block; margin-top: 30px; color: #0b4f35; font-weight: bold; text-decoration: none; }
+        .back-link:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <a href="../index.html" class="logo-link">
+                <img src="../imagenes/logo2.png" alt="Volver al Inicio" width="60">
+            </a>
+            <div class="titulos-header">
+                <h1>Sostenibilidad IT y GreenOps</h1>
+                <p>Portal Informativo | Universidad Tecnológica de Panamá</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <article class="articulo-blog">
+            <h1>1. Green IT y GreenOps: Conceptos Fundamentales</h1>
+            <p>
+                Aunque a menudo se usan como sinónimos, Green IT y GreenOps representan dos capas distintas pero complementarias de la Sostenibilidad Tecnológica en la era moderna. Para comprender el verdadero impacto de las tecnologías eco-amigables en 2026, es fundamental analizar cómo interactúan el diseño estratégico de hardware y la optimización continua de los sistemas en producción.
+            </p>
+
+            <img src="../imagenes/greenops2.jpeg" class="imagen-blog">
+
+            <h2>Green IT (Tecnologías de la Información Verdes)</h2>
+            <p>
+                Green IT es la disciplina macro que busca diseñar, fabricar, usar y disponer de los dispositivos y sistemas informáticos de manera ambientalmente responsable. Su objetivo prioritario es minimizar el impacto negativo de la tecnología en el medio ambiente durante absolutamente todo su ciclo de vida útil. Para lograr esto, la disciplina se centra en cuatro pilares fundamentales:
+            </p>
+            <ul>
+                <li><strong>Diseño y manufactura ecológicos (Eco-diseño):</strong> Implica la selección meticulosa de materiales de bajo impacto ambiental, la reducción drástica de sustancias tóxicas, el desarrollo de un diseño modular enfocado en facilitar futuras reparaciones y el desmontaje del dispositivo, así como la optimización del embalaje y la logística para mitigar la huella de carbono generada en toda la cadena de suministro.</li>
+                <li><strong>Uso y operación eficientes:</strong> Busca alcanzar la máxima eficiencia energética en la fase de uso activo de los dispositivos, la cual representa la etapa más larga e intensiva en consumo. Esto incluye metodologías como la virtualización de servidores, la configuración de modos avanzados de bajo consumo en equipos de escritorio, la optimización exhaustiva del software para que requiera menos ciclos de computación (y, por ende, menos energía), y la adopción estricta de estándares internacionales como Energy Star o EPEAT.</li>
+                <li><strong>Gestión responsable del final de vida útil:</strong> Se enfoca en evitar por completo que los Residuos de Aparatos Eléctricos y Electrónicos (RAEE) terminen contaminando vertederos tradicionales. Promueve de forma activa la reutilización, el reacondicionamiento (otorgándole una segunda vida útil a los equipos), el reciclaje formal y certificado de los componentes internos, y la aplicación de logística inversa para recuperar materiales valiosos y gestionar de forma segura los elementos tóxicos.</li>
+                <li><strong>Desmaterialización de procesos:</strong> Consiste en sustituir productos y procesos físicos tradicionales por alternativas completamente digitales, siempre y cuando el balance energético neto resulte positivo. Ejemplos claros de esto son el teletrabajo (que reduce las emisiones por transporte), la adopción de la factura electrónica (que elimina la demanda de papel), y la virtualización de servidores que reduce drásticamente el hardware físico necesario en las organizaciones.</li>
+            </ul>
+
+            <h2>GreenOps (Operaciones Verdes)</h2>
+            <p>
+                GreenOps es la evolución directa de marcos de trabajo consolidados como FinOps y DevOps, aplicando sus principios de cultura organizativa, colaboración interdisciplinaria y medición constante directamente al ecosistema de la sostenibilidad. GreenOps integra las métricas de impacto ambiental directamente en las operaciones diarias de TI, logrando que los equipos de ingeniería y operaciones asuman la responsabilidad directa de la huella de carbono generada, y no solo se enfoquen en variables tradicionales como el coste financiero o el rendimiento técnico.
+            </p>
+            <p>
+                Este marco metodológico cloud-native se apoya en tres palancas de acción principales:
+            </p>
+            <ul>
+                <li><strong>Observabilidad de la sostenibilidad:</strong> Bajo la premisa de que no se puede optimizar aquello que no se mide, GreenOps exige una telemetría granular sobre el consumo energético y las emisiones de carbono asociadas a cada recurso lógico, ya sea un cluster, un pod, una función serverless o incluso un pipeline de CI/CD. El uso de herramientas especializadas como Kepler, Cloud Carbon Footprint o los dashboards nativos provistos por los hiperescaladores es clave en este proceso.</li>
+                <li><strong>Automatización de la eficiencia:</strong> Consiste en implementar políticas programadas automáticas que alineen perfectamente la demanda con la oferta real de recursos para no malgastar energía de forma pasiva. Ejemplos representativos son la programación del apagado de entornos de desarrollo durante horarios nocturnos, el auto-scaling basado en métricas de carbono en tiempo real (lo que permite desplegar servicios en la región cloud con la energía más limpia disponible en ese momento), o la eliminación automatizada de volúmenes de almacenamiento no utilizados, también conocidos como "zombie resources".</li>
+                <li><strong>Decisiones de arquitectura carbono-conscientes:</strong> Traslada los principios de la sostenibilidad directamente al diseño de la solución de software. Implica la elección de lenguajes de programación que demuestren ser más eficientes energéticamente, la selección de bases de datos adecuadas a la naturaleza exacta de la carga de trabajo, o la adopción de patrones de arquitectura modernos como event-driven (dirigida por eventos), los cuales evitan eficazmente el consumo pasivo de servidores encendidos en todo momento.</li>
+            </ul>
+
+            <h2>La Diferencia Clave</h2>
+            <p>
+                En conclusión, la línea divisoria e interconexión entre ambos conceptos es clara: Green IT define el "qué" y el "por qué" mediante la estrategia y los principios macros, mientras que GreenOps define estrictamente el "cómo" en el día a día de la operación cloud-native, haciendo tangible la sostenibilidad para los equipos técnicos.
+            </p>
+
+            <a href="../index.html" class="back-link">← Regresar a la página principal</a>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Universidad Tecnológica de Panamá | Centro Regional de Chiriquí</p>
+    </footer>
+
+</body>
+</html>
